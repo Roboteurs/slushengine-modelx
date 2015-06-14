@@ -1,0 +1,223 @@
+* EESchema Netlist Version 1.1 (Spice format) creation date: Tue 24 Feb 2015 10:34:10 PM EST
+
+* To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
+* To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
+
+*Sheet Name:/
+P1003  ? /Back Power Protection/5V_MCU /PI_I2C_SDA /Back Power Protection/5V_MCU /PI_I2C_SCL GND /Stepper Driver #0/STCK /PI_UART_TXD GND /PI_UART_RXD /Stepper Driver #1/~BUSY~/SYNC /Stepper Driver #2/~BUSY~/SYNC /Stepper Driver #3/~CS GND /IO_EXP_INTB /Stepper Driver #0/~STBY/RST ? /Stepper Driver #0/~CS /Stepper Driver #0/SDI GND /Stepper Driver #0/SDO /Stepper Driver #1/~CS /Stepper Driver #0/SCK /PI_SPI_CE0 GND ? Net-_P1003-Pad27_ Net-_P1003-Pad28_ /Stepper Driver #1/STCK GND /Stepper Driver #2/STCK /Stepper Driver #3/STCK /Stepper Driver #0/~FLAG GND /Stepper Driver #3/~BUSY~/SYNC /Stepper Driver #0/~BUSY~/SYNC /IO_EXP_RST GND /IO_EXP_INTA Raspberry_Pi_+_Conn		
+U1001  GND GND GND GND Net-_P1003-Pad27_ Net-_P1003-Pad28_ Net-_JP1001-Pad1_ +3.3V CAT24C32HU4I-GT3		
+R1001  +3.3V Net-_JP1001-Pad1_ 1k		
+P1001  GND Net-_JP1001-Pad1_ CONN_01X02		
+R1003  +3.3V Net-_P1003-Pad28_ 3.9k		
+R1004  +3.3V Net-_P1003-Pad27_ 3.9k		
+JP1001  Net-_JP1001-Pad1_ GND JUMPER		
+C1003  +3.3V GND C		
+U1002  Net-_R1005-Pad2_ GND ? Net-_C1005-Pad2_ Net-_C1004-Pad2_ GND Net-_U1002-Pad7_ +24V LM3489		
+R1002  +24V Net-_C1004-Pad2_ 24k		
+C1002  +24V GND 0.1uf		
+C1001  +24V GND 50uf/50v		
+C1004  +24V Net-_C1004-Pad2_ 1nf		
+R1005  Net-_D1001-Pad2_ Net-_R1005-Pad2_ 270		
+D1001  GND Net-_D1001-Pad2_ DIODESCH		
+L1001  Net-_D1001-Pad2_ Net-_C1005-Pad1_ 22uH		
+R1006  Net-_C1005-Pad1_ Net-_C1005-Pad2_ R		
+R1007  Net-_C1005-Pad2_ GND R		
+C1006  Net-_C1005-Pad1_ GND 100uf/10v		
+U1003  Net-_D1001-Pad2_ Net-_D1001-Pad2_ Net-_U1002-Pad7_ +24V Net-_D1001-Pad2_ Net-_D1001-Pad2_ FDC5614P		
+F1001  Net-_C1005-Pad1_ +5V 2A		
+R1009  +24V Net-_R1009-Pad2_ 3.3k		
+R1011  Net-_R1010-Pad3_ GND 820		
+R1010  Net-_R1009-Pad2_ /Stepper Driver #0/ADCIN Net-_R1010-Pad3_ 22k		
+C1008  /Stepper Driver #0/ADCIN GND 33nF		
+D1003  GND /Stepper Driver #0/ADCIN 3.3V		
+U1005  Net-_P1006-Pad1_ Net-_P1006-Pad2_ Net-_P1006-Pad3_ Net-_P1006-Pad4_ Net-_P1006-Pad5_ Net-_P1006-Pad6_ Net-_P1006-Pad7_ Net-_P1006-Pad8_ +3.3V GND /PI_I2C_SCL /PI_I2C_SDA GND GND GND /IO_EXP_RST /IO_EXP_INTB /IO_EXP_INTA /Industrial Input 0/A/D_Input /Industrial Input 1/A/D_Input /Industrial Input 2/A/D_Input /Industrial Input 3/A/D_Input /Industrial Output 0/Sink /Industrial Output 1/Sink /Industrial Output 2/Sink /Industrial Output 3/Sink MCP23017		
+P1006  Net-_P1006-Pad1_ Net-_P1006-Pad2_ Net-_P1006-Pad3_ Net-_P1006-Pad4_ Net-_P1006-Pad5_ Net-_P1006-Pad6_ Net-_P1006-Pad7_ Net-_P1006-Pad8_ CONN_01X08		
+P1032  +24V GND /Industrial Input 0/MCU_Input /Industrial Input 1/MCU_Input /Industrial Input 2/MCU_Input /Industrial Input 3/MCU_Input CONN_01X06		
+P1033  +24V GND /Industrial Output 0/MCU_Pin /Industrial Output 1/MCU_Pin /Industrial Output 2/MCU_Pin /Industrial Output 3/MCU_Pin CONN_01X06		
+P1005  +3.3V +3.3V +3.3V +3.3V GND GND GND GND CONN_01X08		
+U1004  Net-_R1008-Pad1_ +3.3V +5V LM1117IMPX-ADJ		
+D1002  GND +5V ZENER		
+C1007  +5V GND 10uf/6.3V		
+R1008  Net-_R1008-Pad1_ GND 390		
+R1012  +3.3V Net-_R1008-Pad1_ 240		
+C1010  +3.3V GND 10uf/6.3V		
+D1004  +3.3V Net-_D1004-Pad2_ LED		
+R1013  Net-_D1004-Pad2_ GND 360		
+P1007  /Stepper Driver #0/STCK TST		
+P1004  GND ? +3.3V /PI_UART_RXD /PI_UART_TXD ? CONN_01X06		
+JP1002  Net-_J1001-Pad1_ +3.3V JUMPER		
+J1001  Net-_J1001-Pad1_ GND /PI_UART_RXD /PI_UART_TXD /PI_I2C_SCL /PI_I2C_SDA /Stepper Driver #0/SDO /Stepper Driver #0/SDI /Stepper Driver #0/SCK /PI_SPI_CE0 UEXT1		
+P1008  /Stepper Driver #1/STCK TST		
+P1009  /Stepper Driver #2/STCK TST		
+P1010  /Stepper Driver #3/STCK TST		
+P1011  /Stepper Driver #0/~BUSY~/SYNC TST		
+P1012  /Stepper Driver #1/~BUSY~/SYNC TST		
+P1013  /Stepper Driver #2/~BUSY~/SYNC TST		
+P1014  /Stepper Driver #3/~BUSY~/SYNC TST		
+P1020  +3.3V TST		
+P1021  +5V TST		
+P1022  GND TST		
+P1023  GND TST		
+P1024  GND TST		
+P1025  /Stepper Driver #0/SCK TST		
+P1026  /Stepper Driver #0/SDO TST		
+P1027  /Stepper Driver #0/SDI TST		
+P1028  /Stepper Driver #0/~CS TST		
+P1029  /Stepper Driver #1/~CS TST		
+P1030  /Stepper Driver #2/~CS TST		
+P1031  /Stepper Driver #3/~CS TST		
+P1015  /Stepper Driver #0/ADCIN TST		
+P1016  /Stepper Driver #0/~STBY/RST TST		
+P1017  /PI_I2C_SCL TST		
+P1018  /PI_I2C_SDA TST		
+P1019  /Stepper Driver #0/~FLAG TST		
+P1002  +24V GND CONN_01X02		
+C1005  Net-_C1005-Pad1_ Net-_C1005-Pad2_ 0.1uf		
+C1009  +3.3V GND 0.1uf		
+*Sheet Name:/Stepper Driver #0/
+C2014  +24V GND 100uF		
+C2008  Net-_C2008-Pad1_ +24V 220nF		
+C2009  Net-_C2009-Pad1_ Net-_C2009-Pad2_ 10nF		
+D2003  +24V Net-_C2009-Pad1_ Net-_C2008-Pad1_ DOUBLE_SCHOTTKY		
+R2001  +3.3V Net-_D2001-Pad1_ 316		
+R2003  +3.3V Net-_D2002-Pad1_ 220		
+D2001  Net-_D2001-Pad1_ /Stepper Driver #0/~FLAG Error		
+D2002  Net-_D2002-Pad1_ /Stepper Driver #0/~BUSY~/SYNC Busy		
+R2002  +3.3V /Stepper Driver #0/~FLAG 39k		
+R2006  +3.3V Net-_R2006-Pad2_ 10k		
+C2004  /Stepper Driver #0/VREG GND 10uF		
+C2007  +3.3V GND 47uF		
+U2001  GND Net-_J2001-Pad2_ Net-_J2001-Pad2_ +24V +24V /Stepper Driver #0/~STBY/RST Net-_R2006-Pad2_ /Stepper Driver #0/ADCIN /Stepper Driver #0/VREG ? ? GND Net-_C2009-Pad2_ Net-_C2008-Pad1_ +24V +24V Net-_J2001-Pad3_ Net-_J2001-Pad3_ GND Net-_J2001-Pad4_ Net-_J2001-Pad4_ +24V +24V +3.3V /Stepper Driver #0/SDO /Stepper Driver #0/SCK /Stepper Driver #0/SDI GND /Stepper Driver #0/~BUSY~/SYNC /Stepper Driver #0/~CS /Stepper Driver #0/~FLAG /Stepper Driver #0/STCK +24V +24V Net-_J2001-Pad1_ Net-_J2001-Pad1_ GND L6470		
+J2001  Net-_J2001-Pad1_ Net-_J2001-Pad2_ Net-_J2001-Pad3_ Net-_J2001-Pad4_ Stepper Motor		
+C2013  +24V GND 0.1uf		
+C2012  +24V GND 0.1uf		
+C2011  +24V GND 0.1uf		
+C2010  +24V GND 0.1uf		
+C2006  +3.3V GND 0.1uf		
+C2003  /Stepper Driver #0/VREG GND 0.1uf		
+C2001  /Stepper Driver #0/~FLAG GND 0.1uf		
+C2002  /Stepper Driver #0/~BUSY~/SYNC GND 0.1uf		
+C2005  /Stepper Driver #0/~STBY/RST GND 0.1uf		
+R2004  +3.3V /Stepper Driver #0/~BUSY~/SYNC 39k		
+R2005  +3.3V /Stepper Driver #0/~STBY/RST 39k		
+P2001  Net-_J2001-Pad1_ Net-_J2001-Pad2_ Net-_J2001-Pad3_ Net-_J2001-Pad4_ CONN_01X04		
+*Sheet Name:/Industrial Output 0/
+R3001  /Industrial Output 0/MCU_Pin Net-_Q3001-Pad1_ 470		
+D3001  /Industrial Output 0/Sink +24V RSX501L-20TE25		
+Q3001  Net-_Q3001-Pad1_ /Industrial Output 0/Sink GND BCP51		
+*Sheet Name:/Industrial Input 0/
+R4001  /Industrial Input 0/A/D_Input /Industrial Input 0/MCU_Input 3.3k		
+C4001  /Industrial Input 0/MCU_Input GND 1nF		
+D4001  GND /Industrial Input 0/MCU_Input +3.3V 1SS295		
+*Sheet Name:/Industrial Input 1/
+R5001  /Industrial Input 1/A/D_Input /Industrial Input 1/MCU_Input 3.3k		
+C5001  /Industrial Input 1/MCU_Input GND 1nF		
+D5001  GND /Industrial Input 1/MCU_Input +3.3V 1SS295		
+*Sheet Name:/Industrial Input 2/
+R6001  /Industrial Input 2/A/D_Input /Industrial Input 2/MCU_Input 3.3k		
+C6001  /Industrial Input 2/MCU_Input GND 1nF		
+D6001  GND /Industrial Input 2/MCU_Input +3.3V 1SS295		
+*Sheet Name:/Industrial Input 3/
+R7001  /Industrial Input 3/A/D_Input /Industrial Input 3/MCU_Input 3.3k		
+C7001  /Industrial Input 3/MCU_Input GND 1nF		
+D7001  GND /Industrial Input 3/MCU_Input +3.3V 1SS295		
+*Sheet Name:/Industrial Output 1/
+R8001  /Industrial Output 1/MCU_Pin Net-_Q8001-Pad1_ 470		
+D8001  /Industrial Output 1/Sink +24V RSX501L-20TE25		
+Q8001  Net-_Q8001-Pad1_ /Industrial Output 1/Sink GND BCP51		
+*Sheet Name:/Industrial Output 2/
+R9001  /Industrial Output 2/MCU_Pin Net-_Q9001-Pad1_ 470		
+D9001  /Industrial Output 2/Sink +24V RSX501L-20TE25		
+Q9001  Net-_Q9001-Pad1_ /Industrial Output 2/Sink GND BCP51		
+*Sheet Name:/Industrial Output 3/
+R10001  /Industrial Output 3/MCU_Pin Net-_Q10001-Pad1_ 470		
+D10001  /Industrial Output 3/Sink +24V RSX501L-20TE25		
+Q10001  Net-_Q10001-Pad1_ /Industrial Output 3/Sink GND BCP51		
+*Sheet Name:/Back Power Protection/
+Q11001  Net-_Q11001-Pad1_ /Back Power Protection/5V_MCU +5V BSS138		
+U11001  Net-_R11001-Pad1_ Net-_R11001-Pad1_ Net-_R11001-Pad1_ Net-_Q11001-Pad1_ /Back Power Protection/5V_MCU +5V DMMT5401		
+R11002  Net-_Q11001-Pad1_ GND 47k		
+R11001  Net-_R11001-Pad1_ GND 10k		
+*Sheet Name:/Stepper Driver #1/
+C12014  +24V GND 100uF		
+C12008  Net-_C12008-Pad1_ +24V 220nF		
+C12009  Net-_C12009-Pad1_ Net-_C12009-Pad2_ 10nF		
+D12003  +24V Net-_C12009-Pad1_ Net-_C12008-Pad1_ DOUBLE_SCHOTTKY		
+R12001  +3.3V Net-_D12001-Pad1_ 316		
+R12003  +3.3V Net-_D12002-Pad1_ 220		
+D12001  Net-_D12001-Pad1_ /Stepper Driver #0/~FLAG Error		
+D12002  Net-_D12002-Pad1_ /Stepper Driver #1/~BUSY~/SYNC Busy		
+R12002  +3.3V /Stepper Driver #0/~FLAG 39k		
+R12006  +3.3V Net-_R12006-Pad2_ 10k		
+C12004  /Stepper Driver #1/VREG GND 10uF		
+C12007  +3.3V GND 47uF		
+U12001  GND Net-_J12001-Pad2_ Net-_J12001-Pad2_ +24V +24V /Stepper Driver #0/~STBY/RST Net-_R12006-Pad2_ /Stepper Driver #0/ADCIN /Stepper Driver #1/VREG ? ? GND Net-_C12009-Pad2_ Net-_C12008-Pad1_ +24V +24V Net-_J12001-Pad3_ Net-_J12001-Pad3_ GND Net-_J12001-Pad4_ Net-_J12001-Pad4_ +24V +24V +3.3V /Stepper Driver #0/SDO /Stepper Driver #0/SCK /Stepper Driver #0/SDI GND /Stepper Driver #1/~BUSY~/SYNC /Stepper Driver #1/~CS /Stepper Driver #0/~FLAG /Stepper Driver #1/STCK +24V +24V Net-_J12001-Pad1_ Net-_J12001-Pad1_ GND L6470		
+J12001  Net-_J12001-Pad1_ Net-_J12001-Pad2_ Net-_J12001-Pad3_ Net-_J12001-Pad4_ Stepper Motor		
+C12013  +24V GND 0.1uf		
+C12012  +24V GND 0.1uf		
+C12011  +24V GND 0.1uf		
+C12010  +24V GND 0.1uf		
+C12006  +3.3V GND 0.1uf		
+C12003  /Stepper Driver #1/VREG GND 0.1uf		
+C12001  /Stepper Driver #0/~FLAG GND 0.1uf		
+C12002  /Stepper Driver #1/~BUSY~/SYNC GND 0.1uf		
+C12005  /Stepper Driver #0/~STBY/RST GND 0.1uf		
+R12004  +3.3V /Stepper Driver #1/~BUSY~/SYNC 39k		
+R12005  +3.3V /Stepper Driver #0/~STBY/RST 39k		
+P12001  Net-_J12001-Pad1_ Net-_J12001-Pad2_ Net-_J12001-Pad3_ Net-_J12001-Pad4_ CONN_01X04		
+*Sheet Name:/Stepper Driver #2/
+C13014  +24V GND 100uF		
+C13008  Net-_C13008-Pad1_ +24V 220nF		
+C13009  Net-_C13009-Pad1_ Net-_C13009-Pad2_ 10nF		
+D13003  +24V Net-_C13009-Pad1_ Net-_C13008-Pad1_ DOUBLE_SCHOTTKY		
+R13001  +3.3V Net-_D13001-Pad1_ 316		
+R13003  +3.3V Net-_D13002-Pad1_ 220		
+D13001  Net-_D13001-Pad1_ /Stepper Driver #0/~FLAG Error		
+D13002  Net-_D13002-Pad1_ /Stepper Driver #2/~BUSY~/SYNC Busy		
+R13002  +3.3V /Stepper Driver #0/~FLAG 39k		
+R13006  +3.3V Net-_R13006-Pad2_ 10k		
+C13004  /Stepper Driver #2/VREG GND 10uF		
+C13007  +3.3V GND 47uF		
+U13001  GND Net-_J13001-Pad2_ Net-_J13001-Pad2_ +24V +24V /Stepper Driver #0/~STBY/RST Net-_R13006-Pad2_ /Stepper Driver #0/ADCIN /Stepper Driver #2/VREG ? ? GND Net-_C13009-Pad2_ Net-_C13008-Pad1_ +24V +24V Net-_J13001-Pad3_ Net-_J13001-Pad3_ GND Net-_J13001-Pad4_ Net-_J13001-Pad4_ +24V +24V +3.3V /Stepper Driver #0/SDO /Stepper Driver #0/SCK /Stepper Driver #0/SDI GND /Stepper Driver #2/~BUSY~/SYNC /Stepper Driver #2/~CS /Stepper Driver #0/~FLAG /Stepper Driver #2/STCK +24V +24V Net-_J13001-Pad1_ Net-_J13001-Pad1_ GND L6470		
+J13001  Net-_J13001-Pad1_ Net-_J13001-Pad2_ Net-_J13001-Pad3_ Net-_J13001-Pad4_ Stepper Motor		
+C13013  +24V GND 0.1uf		
+C13012  +24V GND 0.1uf		
+C13011  +24V GND 0.1uf		
+C13010  +24V GND 0.1uf		
+C13006  +3.3V GND 0.1uf		
+C13003  /Stepper Driver #2/VREG GND 0.1uf		
+C13001  /Stepper Driver #0/~FLAG GND 0.1uf		
+C13002  /Stepper Driver #2/~BUSY~/SYNC GND 0.1uf		
+C13005  /Stepper Driver #0/~STBY/RST GND 0.1uf		
+R13004  +3.3V /Stepper Driver #2/~BUSY~/SYNC 39k		
+R13005  +3.3V /Stepper Driver #0/~STBY/RST 39k		
+P13001  Net-_J13001-Pad1_ Net-_J13001-Pad2_ Net-_J13001-Pad3_ Net-_J13001-Pad4_ CONN_01X04		
+*Sheet Name:/Stepper Driver #3/
+C14014  +24V GND 100uF		
+C14008  Net-_C14008-Pad1_ +24V 220nF		
+C14009  Net-_C14009-Pad1_ Net-_C14009-Pad2_ 10nF		
+D14003  +24V Net-_C14009-Pad1_ Net-_C14008-Pad1_ DOUBLE_SCHOTTKY		
+R14001  +3.3V Net-_D14001-Pad1_ 316		
+R14003  +3.3V Net-_D14002-Pad1_ 220		
+D14001  Net-_D14001-Pad1_ /Stepper Driver #3/~FLAG Error		
+D14002  Net-_D14002-Pad1_ /Stepper Driver #3/~BUSY~/SYNC Busy		
+R14002  +3.3V /Stepper Driver #3/~FLAG 39k		
+R14006  +3.3V Net-_R14006-Pad2_ 10k		
+C14004  /Stepper Driver #3/VREG GND 10uF		
+C14007  +3.3V GND 47uF		
+U14001  GND Net-_J14001-Pad2_ Net-_J14001-Pad2_ +24V +24V /Stepper Driver #0/~STBY/RST Net-_R14006-Pad2_ /Stepper Driver #0/ADCIN /Stepper Driver #3/VREG ? ? GND Net-_C14009-Pad2_ Net-_C14008-Pad1_ +24V +24V Net-_J14001-Pad3_ Net-_J14001-Pad3_ GND Net-_J14001-Pad4_ Net-_J14001-Pad4_ +24V +24V +3.3V /Stepper Driver #0/SDO /Stepper Driver #0/SCK /Stepper Driver #0/SDI GND /Stepper Driver #3/~BUSY~/SYNC /Stepper Driver #3/~CS /Stepper Driver #3/~FLAG /Stepper Driver #3/STCK +24V +24V Net-_J14001-Pad1_ Net-_J14001-Pad1_ GND L6470		
+J14001  Net-_J14001-Pad1_ Net-_J14001-Pad2_ Net-_J14001-Pad3_ Net-_J14001-Pad4_ Stepper Motor		
+C14013  +24V GND 0.1uf		
+C14012  +24V GND 0.1uf		
+C14011  +24V GND 0.1uf		
+C14010  +24V GND 0.1uf		
+C14006  +3.3V GND 0.1uf		
+C14003  /Stepper Driver #3/VREG GND 0.1uf		
+C14001  /Stepper Driver #3/~FLAG GND 0.1uf		
+C14002  /Stepper Driver #3/~BUSY~/SYNC GND 0.1uf		
+C14005  /Stepper Driver #0/~STBY/RST GND 0.1uf		
+R14004  +3.3V /Stepper Driver #3/~BUSY~/SYNC 39k		
+R14005  +3.3V /Stepper Driver #0/~STBY/RST 39k		
+P14001  Net-_J14001-Pad1_ Net-_J14001-Pad2_ Net-_J14001-Pad3_ Net-_J14001-Pad4_ CONN_01X04		
+
+.end
