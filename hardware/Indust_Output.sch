@@ -1,34 +1,4 @@
 EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:special
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
 LIBS:cat24c32hu4i-gt3
 LIBS:components
 LIBS:DMMT5401
@@ -38,12 +8,12 @@ LIBS:lm3489
 LIBS:mcp23017
 LIBS:raspberry_pi_+_conn
 LIBS:max1164x
-LIBS:motion_engine_hatish-cache
+LIBS:slushengine_modelx-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 14
+Sheet 10 14
 Title ""
 Date ""
 Rev ""
@@ -103,14 +73,14 @@ Wire Wire Line
 	6400 3650 6150 3650
 Connection ~ 6150 3650
 $Comp
-L +24V #PWR077
+L +24V #PWR078
 U 1 1 54EEA005
 P 6400 3050
-AR Path="/54EE97D2/54EEA005" Ref="#PWR077"  Part="1" 
-AR Path="/54EFA1C9/54EEA005" Ref="#PWR091"  Part="1" 
-AR Path="/54EFA3DD/54EEA005" Ref="#PWR093"  Part="1" 
-AR Path="/54EFA98A/54EEA005" Ref="#PWR095"  Part="1" 
-F 0 "#PWR095" H 6400 3000 20  0001 C CNN
+AR Path="/54EE97D2/54EEA005" Ref="#PWR078"  Part="1" 
+AR Path="/54EFA1C9/54EEA005" Ref="#PWR092"  Part="1" 
+AR Path="/54EFA3DD/54EEA005" Ref="#PWR094"  Part="1" 
+AR Path="/54EFA98A/54EEA005" Ref="#PWR096"  Part="1" 
+F 0 "#PWR096" H 6400 3000 20  0001 C CNN
 F 1 "+24V" H 6400 3150 30  0000 C CNN
 F 2 "" H 6400 3050 60  0000 C CNN
 F 3 "" H 6400 3050 60  0000 C CNN
@@ -122,14 +92,14 @@ Wire Wire Line
 Wire Wire Line
 	6150 4150 6150 4250
 $Comp
-L GND #PWR078
+L GND #PWR079
 U 1 1 54EEA00D
 P 6150 4250
-AR Path="/54EE97D2/54EEA00D" Ref="#PWR078"  Part="1" 
-AR Path="/54EFA1C9/54EEA00D" Ref="#PWR092"  Part="1" 
-AR Path="/54EFA3DD/54EEA00D" Ref="#PWR094"  Part="1" 
-AR Path="/54EFA98A/54EEA00D" Ref="#PWR096"  Part="1" 
-F 0 "#PWR096" H 6150 4250 30  0001 C CNN
+AR Path="/54EE97D2/54EEA00D" Ref="#PWR079"  Part="1" 
+AR Path="/54EFA1C9/54EEA00D" Ref="#PWR093"  Part="1" 
+AR Path="/54EFA3DD/54EEA00D" Ref="#PWR095"  Part="1" 
+AR Path="/54EFA98A/54EEA00D" Ref="#PWR097"  Part="1" 
+F 0 "#PWR097" H 6150 4250 30  0001 C CNN
 F 1 "GND" H 6150 4180 30  0001 C CNN
 F 2 "" H 6150 4250 60  0000 C CNN
 F 3 "" H 6150 4250 60  0000 C CNN

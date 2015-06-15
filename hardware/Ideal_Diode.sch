@@ -1,34 +1,4 @@
 EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:special
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
 LIBS:cat24c32hu4i-gt3
 LIBS:components
 LIBS:DMMT5401
@@ -38,7 +8,7 @@ LIBS:lm3489
 LIBS:mcp23017
 LIBS:raspberry_pi_+_conn
 LIBS:max1164x
-LIBS:motion_engine_hatish-cache
+LIBS:slushengine_modelx-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -124,10 +94,10 @@ F 4 "71-CRCW0402-10K-E3" V 5800 4800 60  0001 C CNN "Mouser Part No."
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR097
+L GND #PWR098
 U 1 1 54F1D1B9
 P 6200 5200
-F 0 "#PWR097" H 6200 4950 60  0001 C CNN
+F 0 "#PWR098" H 6200 4950 60  0001 C CNN
 F 1 "GND" H 6200 5050 60  0000 C CNN
 F 2 "" H 6200 5200 60  0000 C CNN
 F 3 "" H 6200 5200 60  0000 C CNN
@@ -135,10 +105,10 @@ F 3 "" H 6200 5200 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR098
+L GND #PWR099
 U 1 1 54F1D1D3
 P 5800 5200
-F 0 "#PWR098" H 5800 4950 60  0001 C CNN
+F 0 "#PWR099" H 5800 4950 60  0001 C CNN
 F 1 "GND" H 5800 5050 60  0000 C CNN
 F 2 "" H 5800 5200 60  0000 C CNN
 F 3 "" H 5800 5200 60  0000 C CNN

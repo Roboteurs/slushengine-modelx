@@ -1,34 +1,4 @@
 EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:special
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
 LIBS:cat24c32hu4i-gt3
 LIBS:components
 LIBS:DMMT5401
@@ -38,7 +8,7 @@ LIBS:lm3489
 LIBS:mcp23017
 LIBS:raspberry_pi_+_conn
 LIBS:max1164x
-LIBS:motion_engine_hatish-cache
+LIBS:slushengine_modelx-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -92,14 +62,14 @@ F 5 "810-C1005C0G2A102J5C" H 5400 3800 60  0001 C CNN "Mouser Part No."
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR079
+L GND #PWR080
 U 1 1 54EE444C
 P 5400 4100
-AR Path="/54EEB3E8/54EE444C" Ref="#PWR079"  Part="1" 
-AR Path="/54EF8F2F/54EE444C" Ref="#PWR082"  Part="1" 
-AR Path="/54EF9440/54EE444C" Ref="#PWR085"  Part="1" 
-AR Path="/54EF9444/54EE444C" Ref="#PWR088"  Part="1" 
-F 0 "#PWR088" H 5400 4100 30  0001 C CNN
+AR Path="/54EEB3E8/54EE444C" Ref="#PWR080"  Part="1" 
+AR Path="/54EF8F2F/54EE444C" Ref="#PWR083"  Part="1" 
+AR Path="/54EF9440/54EE444C" Ref="#PWR086"  Part="1" 
+AR Path="/54EF9444/54EE444C" Ref="#PWR089"  Part="1" 
+F 0 "#PWR089" H 5400 4100 30  0001 C CNN
 F 1 "GND" H 5400 4030 30  0001 C CNN
 F 2 "" H 5400 4100 60  0000 C CNN
 F 3 "" H 5400 4100 60  0000 C CNN
@@ -107,14 +77,14 @@ F 3 "" H 5400 4100 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR080
+L GND #PWR081
 U 1 1 54EE4452
 P 6750 4100
-AR Path="/54EEB3E8/54EE4452" Ref="#PWR080"  Part="1" 
-AR Path="/54EF8F2F/54EE4452" Ref="#PWR083"  Part="1" 
-AR Path="/54EF9440/54EE4452" Ref="#PWR086"  Part="1" 
-AR Path="/54EF9444/54EE4452" Ref="#PWR089"  Part="1" 
-F 0 "#PWR089" H 6750 4100 30  0001 C CNN
+AR Path="/54EEB3E8/54EE4452" Ref="#PWR081"  Part="1" 
+AR Path="/54EF8F2F/54EE4452" Ref="#PWR084"  Part="1" 
+AR Path="/54EF9440/54EE4452" Ref="#PWR087"  Part="1" 
+AR Path="/54EF9444/54EE4452" Ref="#PWR090"  Part="1" 
+F 0 "#PWR090" H 6750 4100 30  0001 C CNN
 F 1 "GND" H 6750 4030 30  0001 C CNN
 F 2 "" H 6750 4100 60  0000 C CNN
 F 3 "" H 6750 4100 60  0000 C CNN
@@ -163,14 +133,14 @@ Text Notes 4650 3150 0    60   ~ 0
 Text Notes 4650 3250 0    60   ~ 0
 0.7mA @ 24V Input, 210mV drop on Schottky array
 $Comp
-L +3.3V #PWR081
+L +3.3V #PWR082
 U 1 1 54EE446D
 P 5750 3700
-AR Path="/54EEB3E8/54EE446D" Ref="#PWR081"  Part="1" 
-AR Path="/54EF8F2F/54EE446D" Ref="#PWR084"  Part="1" 
-AR Path="/54EF9440/54EE446D" Ref="#PWR087"  Part="1" 
-AR Path="/54EF9444/54EE446D" Ref="#PWR090"  Part="1" 
-F 0 "#PWR090" H 5750 3660 30  0001 C CNN
+AR Path="/54EEB3E8/54EE446D" Ref="#PWR082"  Part="1" 
+AR Path="/54EF8F2F/54EE446D" Ref="#PWR085"  Part="1" 
+AR Path="/54EF9440/54EE446D" Ref="#PWR088"  Part="1" 
+AR Path="/54EF9444/54EE446D" Ref="#PWR091"  Part="1" 
+F 0 "#PWR091" H 5750 3660 30  0001 C CNN
 F 1 "+3.3V" H 5750 3810 30  0000 C CNN
 F 2 "" H 5750 3700 60  0000 C CNN
 F 3 "" H 5750 3700 60  0000 C CNN
